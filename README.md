@@ -28,7 +28,7 @@ Run directly from terminal without cloning or installing dependencies:
 Open PowerShell and paste:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/zpratikpathak/KillVenv/home/venv-clean.ps1 | iex"
+$url="https://raw.githubusercontent.com/zpratikpathak/KillVenv/home/venv-clean.ps1"; $file="$env:TEMP\venv-clean.ps1"; Invoke-WebRequest $url -OutFile $file; & $file
 ```
 
 > ⚠️ **Note:** Requests Administrator elevation if needed to inspect all local drives and protected system directories.
