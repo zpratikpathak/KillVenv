@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="pyBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="pyYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+    <linearGradient id="killRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0284c7" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Container Base -->
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#bgGrad)" stroke="#334155" stroke-width="2.5" filter="url(#glow)"/>
+
+  <!-- Python Upper Snake (Blue) -->
+  <path d="M63 24c-14 0-19 6-19 12v7h19v3H35c-7 0-13 4-13 15s5 15 13 15h5V67c0-7 6-13 13-13h19c6 0 11-5 11-11V36c0-6-6-12-15-12h-5zm-5 6a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" fill="url(#pyBlue)"/>
+
+  <!-- Python Lower Snake (Yellow) -->
+  <path d="M65 104c14 0 19-6 19-12v-7H65v-3h28c7 0 13-4 13-15s-5-15-13-15h-5v9c0 7-6 13-13 13H53c-6 0-11 5-11 11v7c0 6 6 12 15 12h8zm5-6a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" fill="url(#pyYellow)"/>
+
+  <!-- Kill Crosshair / Sweep Slash -->
+  <circle cx="64" cy="64" r="22" stroke="url(#killRed)" stroke-width="3" stroke-dasharray="4 3" opacity="0.9"/>
+  <line x1="44" y1="44" x2="84" y2="84" stroke="url(#killRed)" stroke-width="3.5" stroke-linecap="round"/>
+</svg>
