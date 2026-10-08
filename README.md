@@ -43,6 +43,12 @@ bash <(curl -fsSL https://raw.githubusercontent.com/zpratikpathak/KillVenv/home/
 
 ---
 
+<p align="center">
+  <img src="HowToRun.gif" alt="KillVenv Demo" />
+</p>
+
+---
+
 ## ✨ Features
 
 - 🔍 **Full Drive Sweep**: Automatically scans all mounted local volumes (`C:`, `D:`, root filesystem, external development drives).
